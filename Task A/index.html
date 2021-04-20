@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width=160, height=600"/>
+    <title>whiteBG-160x600</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript">
+      var clickTag = "https://www.google.com/";
+      action="javascript:window.open(window.clickTag)"
+      var backgroundClickTag = "https://www.google.com/";
+    </script>
+
+</head>
+
+<body>
+        <div id="banner" onclick="window.open(window.backgroundClickTag)">
+          <div id="ad">
+            <h2 class="headline">Search Professional Contact Info</h2>
+            <img id="arrow" src="images/arrow-down.png">
+            <form name="input_form" id="form-input_form" class="form form-input_form" method="get" action="javascript:window.open(window.clickTag)" 
+            onSubmit="return validate_form(this);">
+                <label for="fn">First Name</label>
+                <input class="text_input highlight" type="text" name="fn" id="fn" value="" tabindex="1" />
+
+                <label for="ln">Last Name</label>
+                <input class="text_input" type="text" name="ln" id="ln" value="" tabindex="2" />
+
+                <div class="buttons">
+                    <!--<button id="user-action-button" class="button useraction">UserAction</button>-->
+                    <button id="clickthrough-button" type="submit" class="button clickthrough">Start Search</button>
+                </div>
+             </form>
+             <div class="container">
+             <div id="logo">Powered By</div>
+            </div>
+        </div><!--END banner-->
+    </div><!--END ad-->
+
+</body>
+<script src="scripts/script.js"></script>
+</html>
