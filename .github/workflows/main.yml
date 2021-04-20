@@ -28,5 +28,9 @@ jobs:
         run: npm install
       - name: Install Surge
         run: npm i -g surge
-      - name: Deploy on Surge
+      - name: Deploy Task A on Surge
         run: surge ./"Task A" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-a.surge.sh
+      - name: Deploy Task A on Surge
+        run: surge ./"Task B" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-b.surge.sh
+      - name: Deploy Task A on Surge
+        run: surge ./"Task C" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-c.surge.sh
