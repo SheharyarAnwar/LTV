@@ -30,7 +30,7 @@ jobs:
         run: npm i -g surge
       - name: Deploy Task A on Surge
         run: surge ./"Task A" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-a.surge.sh
-      - name: Deploy Task A on Surge
+      - name: Deploy Task B on Surge
         run: surge ./"Task B" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-b.surge.sh
-      - name: Deploy Task A on Surge
+      - name: Deploy Task C on Surge
         run: surge ./"Task C" --token ${{secrets.SURGE_TOKEN}} --domain https://ltv-task-c.surge.sh
