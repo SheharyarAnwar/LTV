@@ -66,9 +66,14 @@ document
     const textHolder = document.getElementById("rotateText1");
     textHolder.innerHTML = rotateableText[i];
 
-    i = (i + 1) % rotateableText.length;
-
     secondsPassed++;
+    // console.log(i);
+    if (i === 2 || i === 3) {
+      textHolder.style.fontSize = 16 + "px";
+    } else {
+      textHolder.style.fontSize = 38 + "px";
+    }
+    i = (i + 1) % rotateableText.length;
     if (secondsPassed >= 30) {
       window.clearInterval(nterval);
     }
